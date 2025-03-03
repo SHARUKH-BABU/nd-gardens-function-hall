@@ -1,0 +1,185 @@
+/* Glassmorphic Navbar */
+.func-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.079);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Hide navbar on scroll down */
+.func-header.hidden {
+  transform: translateY(-100%);
+}
+
+/* Show navbar when scrolling up */
+.func-header.visible {
+  transform: translateY(0);
+}
+
+/* Container */
+.func-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo */
+.func-logo img {
+  height: 50px;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+/* Desktop Nav */
+.func-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.func-nav-item {
+  text-decoration: none;
+  color:  gold;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.func-nav-item:hover {
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+/* Active Nav Item */
+.func-nav-item.active {
+  border-bottom: 3px solid red;
+  color: red;
+  text-shadow: 0.1px 0.1px 2px gold; /* Corrected text-shadow */
+}
+
+
+.func-book-btn{
+  text-decoration: none;
+  background: linear-gradient(45deg, #e74c3c, #8e44ad);  
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 120px;
+}
+
+/* Mobile Menu */
+
+.func-mobile-menu-btn {
+  display: none;
+  color: #ff0000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.func-mobile-menu-btn.open {
+  transform: rotate(90deg);
+}
+
+/* Mobile Nav */
+.func-mobile-nav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(101vh);
+  background: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
+  text-align: center;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.func-mobile-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+}
+
+.func-mobile-nav-item {
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.3s ease;
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.func-mobile-nav.open  .func-mobile-nav-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.func-mobile-nav-item:hover {
+  border-bottom: 5px solid #00a6ff;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  color: #00eaff;
+}
+
+/* Mobile Book Now Button */
+.func-mobile-book-btn {
+  background: rgba(255, 215, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(255, 215, 0, 0.8);
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+}
+.func-mobile-book-btn:hover {
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+}
+.func-mobile-book-btn-gradient {
+  background-color: #fff;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .func-nav-links,
+  .func-book-btn {
+    display: none;
+  }
+
+  .func-header-container{
+    padding-right: 0px;
+  }
+  .func-mobile-menu-btn {
+    display: block;
+  }
+  
+}
