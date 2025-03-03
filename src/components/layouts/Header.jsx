@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import GradientText from "../../usages/GradientText";
-import "../styles/Header.css";
 import SplitText from "../../usages/SplitText";
+import "../styles/Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,7 @@ const Header = () => {
         </nav>
 
         <Link to="/booking" className="func-book-btn">
-          <GradientText colors={["lightblue" ,"yellow", "white"]} animationSpeed={4} showBorder={false}>
+          <GradientText colors={["lightblue" ,"yellow", "white", "cyan"]} animationSpeed={2} showBorder={false}>
             Book Now
           </GradientText>
         </Link>
@@ -60,9 +60,9 @@ const Header = () => {
         <div className="func-mobile-nav open">
           <nav className="func-mobile-nav-links">
             <Link to="/" className="func-mobile-nav-item" onClick={() => setIsOpen(false)}>
-              <SplitText
+              <SplitText 
                 text="Home"
-                className="text-2xl font-semibold text-center"
+                className="text-2xl text-center func-mobile-nav-item-name"
                 delay={70}
                 animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -73,7 +73,7 @@ const Header = () => {
             <Link to="/gallery" className="func-mobile-nav-item" onClick={() => setIsOpen(false)}>
               <SplitText
                 text="Gallery"
-                className="text-2xl font-semibold text-center"
+                className="text-2xl func-mobile-nav-item-name text-center"
                 delay={90}
                 animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -84,7 +84,7 @@ const Header = () => {
             <Link to="/about" className="func-mobile-nav-item" onClick={() => setIsOpen(false)}>
               <SplitText
                 text="About"
-                className="text-2xl font-semibold text-center"
+                className="text-2xl func-mobile-nav-item-name text-center"
                 delay={110}
                 animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -95,7 +95,7 @@ const Header = () => {
             <Link to="/contact" className="func-mobile-nav-item" onClick={() => setIsOpen(false)}>
               <SplitText
                 text="Contact"
-                className="text-2xl font-semibold text-center"
+                className="text-2xl func-mobile-nav-item-name text-center"
                 delay={130}
                 animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                 animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -104,7 +104,7 @@ const Header = () => {
                 rootMargin="-50px" />
             </Link>
             <Link to="/booking" className="func-mobile-book-btn-gradient" onClick={() => setIsOpen(false)}>
-              <GradientText colors={["red", "orange", "gray", "white", "green", "blue", "purple"]} animationSpeed={4} showBorder={false}>
+              <GradientText colors={[ "gray", "white", "silver"]} animationSpeed={4} showBorder={false}>
                 Book Now
               </GradientText>
             </Link>

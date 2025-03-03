@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
 /* Glassmorphic Navbar */
 .func-header {
   position: fixed;
@@ -50,7 +53,7 @@
 
 .func-nav-item {
   text-decoration: none;
-  color:  gold;
+  color: #8e44ad;
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -65,7 +68,6 @@
 .func-nav-item.active {
   border-bottom: 3px solid red;
   color: red;
-  text-shadow: 0.1px 0.1px 2px gold; /* Corrected text-shadow */
 }
 
 
@@ -127,15 +129,28 @@
   transform: translateY(-20px);
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
+
+
 .func-mobile-nav.open  .func-mobile-nav-item {
   opacity: 1;
   transform: translateY(0);
 }
-.func-mobile-nav-item:hover {
-  border-bottom: 5px solid #00a6ff;
+.func-mobile-nav-item .func-mobile-nav-item-name{
+  color: #fff;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.func-mobile-nav-item:hover,.func-mobile-nav-item:hover .func-mobile-nav-item-name{
+  border-bottom: 3px solid #00a6ff;
   width: 100%;
   transition: 0.3s ease-in-out;
-  color: #00eaff;
+  color: #00a6ff;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 /* Mobile Book Now Button */
@@ -156,18 +171,26 @@
   color: white;
 }
 .func-mobile-book-btn-gradient {
-  background-color: #fff;
+  background-color: #ffffff2a;
   width: 150px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: larger;
+  font-size: 1.5rem;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 600;
   border-radius: 10px;
 }
 
+.func-mobile-book-btn-gradient:hover {
+  background: linear-gradient(45deg, #e74c3c, #8e44ad);
+  color: white;
+  transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+  transition: all 0.3s ease-in-out;
+  font-weight: 800;
+  border: 1px solid white;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .func-nav-links,

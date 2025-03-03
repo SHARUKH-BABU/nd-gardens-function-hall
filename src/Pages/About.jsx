@@ -2,8 +2,11 @@ import React from "react";
 import "./styles/About.css";
 import Layout from "../components/layouts/Layout.jsx";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  AOS.init();
   const navigate = useNavigate();
 
   return (
@@ -12,12 +15,30 @@ const About = () => {
         {/* About Content */}
         <div className="about-container">
           {/* Left Section - Image */}
-          <div className="image-section">
+          <div className="image-section"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="25"
+            data-aos-duration="800"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+          >
             <img src="./asserts/decoration tree.jpg" alt="Grand Event Hall" className="about-img" />
           </div>
 
           {/* Right Section - Text Content */}
-          <div className="text-section">
+          <div className="text-section" 
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>About Us</h2>
             <p>
               <strong>Nirmala Devi Gardens</strong> is an **exquisite venue** designed for

@@ -1,15 +1,24 @@
 import React from "react";
 import "./styles/Contact.css";
 import Layout from "../components/layouts/Layout";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  Aos.init();
+
   return (
     <Layout>
     <div className="contact-main-container" style={{marginTop: "80px"}}>
-      <div className="contact-container">
+      <div className="contact-container"
+      >
         {/* Left Side - Function Hall Details */}
-        <div className="contact-info">
-          <h1 className="contact-title">Nirmala Devi Gardens</h1>
+        <div className="contact-info"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
+          <h1 className="contact-title">N.D Gardens</h1>
           <p className="contact-description">
             A premium function hall with **<b>spacious rooms, well-maintained
             facilities, elegant stages, and comfortable seating</b>**.  
@@ -18,7 +27,11 @@ const Contact = () => {
         </div>
 
         {/* Right Side - Contact Form */}
-        <div className="contact-form">
+        <div className="contact-form"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
           <h2 className="form-title">Contact Us</h2>
           <form>
             <input type="text" placeholder="Your Name" required />

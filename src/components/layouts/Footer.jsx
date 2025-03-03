@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Logo & Tagline */}
       <div className="footer-brand">
         <img src="./asserts/ND_Gardens_Logo.png" alt="nd gardens logo" className="footer-logo" />
-        <h2>Nirmala Devi Gardens Function Hall</h2>
+        <h2>N.D Gardens</h2>
         <p>Embrace Comfort, Discover Tradition at Nirmala Devi Gardens Function Hall.</p>
       </div>
   
