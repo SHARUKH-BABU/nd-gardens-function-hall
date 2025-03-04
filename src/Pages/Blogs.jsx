@@ -23,7 +23,7 @@ const Blogs = () => {
 
   return (
     <div style={{ marginTop: "80px" }}>
-      <Layout>
+      <Layout title={"Gallery - ND Gardens"}>
         <div className="blogs-container">
           <h1 className="blogs-title"
             data-aos="fade-up" 

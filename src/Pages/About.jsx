@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <div style={{ marginTop: "5rem" }}>
-      <Layout>
+      <Layout title={"About Us - ND Gardens"} >
         {/* About Content */}
         <div className="about-container">
           {/* Left Section - Image */}

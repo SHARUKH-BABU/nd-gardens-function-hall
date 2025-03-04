@@ -41,7 +41,7 @@ const Header = () => {
         </nav>
 
         <Link to="/booking" className="func-book-btn">
-          <GradientText colors={["lightblue" ,"yellow", "white", "cyan"]} animationSpeed={2} showBorder={false}>
+          <GradientText className="func-book-btn-name" colors={["gray", "white", "white", "gray", "white", "white", "gray", "white", "white", "gray"]} animationSpeed={20} showBorder={false}>
             Book Now
           </GradientText>
         </Link>
@@ -104,7 +104,7 @@ const Header = () => {
                 rootMargin="-50px" />
             </Link>
             <Link to="/booking" className="func-mobile-book-btn-gradient" onClick={() => setIsOpen(false)}>
-              <GradientText colors={[ "gray", "white", "silver"]} animationSpeed={4} showBorder={false}>
+              <GradientText colors={[ "gray", "white", "#6e6969", "white"]} animationSpeed={5} showBorder={false}>
                 Book Now
               </GradientText>
             </Link>

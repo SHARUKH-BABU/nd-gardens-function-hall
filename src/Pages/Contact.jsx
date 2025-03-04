@@ -8,7 +8,7 @@ const Contact = () => {
   Aos.init();
 
   return (
-    <Layout>
+    <Layout title={"Contact Us - ND Gardens"} description={"Contact us for booking, queries, and feedback."} keywords={"Contact ND Gardens, ND Gardens Contact, ND Gardens Booking, ND Gardens Queries, ND Gardens Feedback"} author={"Nirmala Devi Functional Halls"}>
     <div className="contact-main-container" style={{marginTop: "80px"}}>
       <div className="contact-container"
       >

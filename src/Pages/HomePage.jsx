@@ -51,7 +51,7 @@ const HomePage = () => {
           <span className="logo"> Gardens</span>
         </h1>
       </div>
-      <Layout>
+      <Layout title={"ND Gardens"}>
 
 
         <div className='landing-page-image' style={{backgroundImage:"url('./asserts/BLOG-2.jpg"}}>

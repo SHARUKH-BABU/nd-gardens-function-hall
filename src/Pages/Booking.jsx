@@ -35,7 +35,7 @@ const Booking = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={"Book Your Spot - ND Gardens"}>
       <div className="booking-container">
         <h1 className="booking-title"
           data-aos="fade-up"

@@ -81,6 +81,11 @@
   border-radius: 5px;
   width: 120px;
 }
+.func-book-btn-name{
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 
 /* Mobile Menu */
 
